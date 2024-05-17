@@ -6,6 +6,8 @@ import ShippingAgent from './Components/Dashboard/ShippingAgent/ShippingAgent.js
 import LogIn from './Components/Form/LogIn/LogIn.jsx';
 import Rsgister from './Components/Form/Register/Register.jsx';
 import { ToastContainer } from 'react-toastify';
+import Admin from './Components/Dashboard/Admin/Admin.jsx';
+import User from './Components/Dashboard/User/User.jsx';
 
 
 function App() {
@@ -21,6 +23,8 @@ function App() {
             <Route path='/' element={<Layout></Layout>}>
               <Route path='shipping' element={<Shipping></Shipping>}></Route>
               <Route path='shipping-agent' element={<ShippingAgent></ShippingAgent>}></Route>
+              <Route path='admins' element={<Admin></Admin>}></Route>
+              <Route path='users' element={<User></User>}></Route>
             </Route>
             <Route path='login' element={<LogIn></LogIn>}></Route>
           </Routes>

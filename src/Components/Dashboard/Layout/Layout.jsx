@@ -2,6 +2,7 @@ import React from 'react'
 import { Outlet } from 'react-router-dom'
 import SideBar from '../SideBar/SideBar.jsx'
 import Navbar from '../NavBar/Navbar.jsx'
+import AddAdmin from '../AddAdmin/AddAdmin.jsx'
 
 export default function Layout() {
   return (
@@ -13,6 +14,7 @@ export default function Layout() {
           </div>
           <div className='w-75 p-5 mt-5'>
             <Outlet></Outlet>
+            <AddAdmin></AddAdmin>
           </div>
         </div>
     </>

@@ -13,26 +13,22 @@ const notify = (msg,type) => toast[type](msg);
 
 
   export default function Admin() {
-    const [data,setShipping] = useState([])
+    const [admins,setAdmins] = useState([])
     const [isDeleted,setIsDeleted] = useState(false)
     const columns = [
       {
-        name: 'Name',
-        selector: row => row.ReceiverName,
+        name: 'Branch',
+        selector: row => row.Branch,
       },
       {
-        name: 'Email',
-        selector: row => row.Email,
-      },
-        {
-        name: 'Status',
-        selector: row => <div className={`${Styles.bgOrangeColor} text-white rounded-pill px-2 py-1`}>{situations[row.situation]}</div>,
+        name: 'Role',
+        selector: row => <div className={`${Styles.bgOrangeColor} text-white rounded-pill px-2 py-1`}>{row.Role}</div>,
       },
         {
         name: 'Action',
         selector: row => <button className={`${Styles.textOrangeColor} btn`}><i className='fas fa-trash-can' onClick={async ()=>{
           try {
-            const result = await axios.delete(`${baseUrl}/applications/${row._id}` , {
+            const result = await axios.delete(`${baseUrl}/admin/${row._id}` , {
               headers:{
                 token: localStorage.getItem("token")
               }
@@ -49,13 +45,14 @@ const notify = (msg,type) => toast[type](msg);
     ];
       const getApplication =async ()=>{
           try {
-            const result = await axios.get(`${baseUrl}/applications`,{
+            const result = await axios.get(`${baseUrl}/admin/all`,{
               headers : {
                   token:localStorage.getItem("token")
 
               }
             })
-            result && setShipping(result?.data?.result)
+            console.log(result?.data?.result);
+            result && setAdmins(result?.data?.result)
           }
           catch (error){
             return error
@@ -68,16 +65,17 @@ const notify = (msg,type) => toast[type](msg);
           <>
               <main className='border border-1 border-bg-black shadow-lg rounded-3'>
                   <header className='d-flex justify-content-between pt-3 px-3'>
-                      <h2>Shipping</h2>
-                      <div className=" mb-3">
-                          <input type="email" className="form-control px-5 rounded-pill" placeholder="name@example.com" />
+                      <h2>Admins</h2>
+                      <div className="d-flex mb-3 gap-3">
+                        <button className={`btn  ${Styles.btnCustom}`}>Add Admin</button>
+                        <input type="email" className="form-control px-5 rounded-pill" placeholder="name@example.com" />
                       </div>
 
                   </header>
                   <section>
                       <DataTable
                       columns={columns}
-                      data={data}
+                      data={admins}
                       />
                   </section>
               </main>
