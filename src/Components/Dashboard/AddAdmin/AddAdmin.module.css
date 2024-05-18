@@ -5,3 +5,9 @@
     background-color: #F7A325;
     color: white;
 }
+i {
+    right: 10px;
+    top: 10px;
+    color: #F7A325;
+    cursor: pointer ;
+}

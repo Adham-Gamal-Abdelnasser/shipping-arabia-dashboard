@@ -67,7 +67,9 @@ const notify = (msg,type) => toast[type](msg);
                   <header className='d-flex justify-content-between pt-3 px-3'>
                       <h2>Admins</h2>
                       <div className="d-flex mb-3 gap-3">
-                        <button className={`btn  ${Styles.btnCustom}`}>Add Admin</button>
+                        <button className={`btn  ${Styles.btnCustom}`} onClick={()=>{
+                          document.getElementById("popUpParent").classList.replace("d-none","d-flex")
+                        }}>Add Admin</button>
                         <input type="email" className="form-control px-5 rounded-pill" placeholder="name@example.com" />
                       </div>
 

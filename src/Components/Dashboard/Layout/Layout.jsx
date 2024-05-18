@@ -13,8 +13,8 @@ export default function Layout() {
             <SideBar></SideBar>
           </div>
           <div className='w-75 p-5 mt-5'>
-            <Outlet></Outlet>
             <AddAdmin></AddAdmin>
+            <Outlet></Outlet>
           </div>
         </div>
     </>
