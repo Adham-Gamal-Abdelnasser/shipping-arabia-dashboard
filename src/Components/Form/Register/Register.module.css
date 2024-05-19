@@ -8,3 +8,12 @@
     background-color: #F7A325;
     color: white;
 }
+h1 {
+    color: #F7A325;
+}
+.navTabs {
+    background-color: transparent;
+}
+.navTabs button {
+    color: #F7A325;
+}

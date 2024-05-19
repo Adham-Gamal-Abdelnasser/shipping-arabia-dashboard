@@ -62,7 +62,7 @@ const notify = (msg,type) => toast[type](msg);
         },[isDeleted])
     return (
           <>
-              <main className='border border-1 border-bg-black shadow-lg rounded-3'>
+              <main className='border border-1 border-bg-black shadow-lg rounded-3 overflow-auto'>
                   <header className='d-flex justify-content-between pt-3 px-3'>
                       <h2>Shipping</h2>
                       <div className=" mb-3">

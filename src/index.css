@@ -1,8 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Sans+Mono:ital,wght@0,400..700;1,400..700&display=swap');
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: "Ubuntu Sans Mono", monospace;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -17,4 +16,12 @@ code {
 .rdt_TableCol {
   background-color: #0A2F35 !important;
   color: #fff !important;
+}
+
+
+/* ! register agent  */
+.nav-link:focus, .nav-link:hover {
+  background-color: #F7A325;
+  color: white;
+  border-radius: 5px;
 }

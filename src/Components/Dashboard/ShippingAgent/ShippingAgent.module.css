@@ -8,3 +8,17 @@
 .textOrangeColor {
     color: #F7A325;
 }
+main {
+    height: 75vh;
+}
+.btnCustom {
+    color: #F7A325 ;
+    border: 1px #F7A325 solid ;
+    background-color: transparent;
+    transition: 0.5s;
+    width: 150px;
+}
+.btnCustom:hover {
+    color: white ;
+    background-color: #F7A325 ;
+}
