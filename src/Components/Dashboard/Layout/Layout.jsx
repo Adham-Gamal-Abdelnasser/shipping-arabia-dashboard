@@ -3,25 +3,7 @@ import { Outlet } from 'react-router-dom'
 import SideBar from '../SideBar/SideBar.jsx'
 import Navbar from '../NavBar/Navbar.jsx'
 import AddAdmin from '../AddAdmin/AddAdmin.jsx'
-<<<<<<< HEAD
 import AddAgent from '../AddAgent/AddAgent.jsx'
-
-export default function Layout() {
-  return (
-    <>
-        <AddAdmin></AddAdmin>
-        <AddAgent></AddAgent>
-        <Navbar></Navbar>
-        <div className='d-flex min-vh-100'>
-          <div className='w-25'>
-            <SideBar></SideBar>
-          </div>
-          <div className='w-75 p-5 mt-5'>
-            <Outlet></Outlet>
-          </div>
-        </div>
-    </>
-=======
 import AddNewMessageModal from '../Message/AddNewMessageModal.jsx'
 import { useSelector } from 'react-redux'
 
@@ -31,13 +13,14 @@ export default function Layout() {
 
   return (
     <div className="relative">
+      <AddAdmin></AddAdmin>
+      <AddAgent></AddAgent>
       <Navbar></Navbar>
       <div className='d-flex'>
         <div className='w-25'>
           <SideBar></SideBar>
         </div>
         <div className='w-75 p-5 mt-5'>
-          <AddAdmin></AddAdmin>
           <Outlet></Outlet>
         </div>
       </div>
@@ -47,6 +30,5 @@ export default function Layout() {
         <AddNewMessageModal />
       </div>
     </div>
->>>>>>> main
   )
 }

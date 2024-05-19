@@ -1,28 +1,25 @@
 .dashboard {
-    right: 20px;
-    bottom: 20px;
+  right: 20px;
+  bottom: 20px;
 }
 .bgOrangeColor {
-    background-color: #F7A325;
+  background-color: #f7a325;
 }
 .textOrangeColor {
-    color: #F7A325;
+  color: #f7a325;
 }
 .btnCustom {
-    color: #F7A325 ;
-    border: 1px #F7A325 solid ;
-    background-color: transparent;
-    transition: 0.5s;
-    width: 150px;
+  color: #f7a325;
+  border: 1px #f7a325 solid;
+  background-color: transparent;
+  transition: 0.5s;
+  width: 150px;
 }
 .btnCustom:hover {
-    color: white ;
-    background-color: #F7A325 ;
-<<<<<<< HEAD
+  color: white;
+  background-color: #f7a325;
 }
 
 main {
-    height: 75vh;
-=======
->>>>>>> main
+  height: 75vh;
 }

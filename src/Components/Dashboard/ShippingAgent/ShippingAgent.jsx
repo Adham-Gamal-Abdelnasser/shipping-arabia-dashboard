@@ -69,7 +69,6 @@ export default function ShippingAgent() {
         },[isDeleted])
     return (
           <>
-<<<<<<< HEAD
               <main className='border border-1 border-bg-black shadow-lg rounded-3 overflow-auto'>
                   <header className='d-flex justify-content-between pt-3 px-3'>
                       <h2>Shipping Agent</h2>
@@ -77,12 +76,6 @@ export default function ShippingAgent() {
                       <button className={`btn  ${Styles.btnCustom}`} onClick={()=>{
                           document.getElementById("agentPopUp").classList.replace("d-none","d-flex")
                         }}>Add Agent</button>
-=======
-              <main className='border border-1 border-bg-black shadow-lg rounded-3'>
-                  <header className='d-flex justify-content-between pt-3 px-3'>
-                      <h2>Shipping Agent</h2>
-                      <div className=" mb-3">
->>>>>>> main
                           <input type="email" className="form-control px-5 rounded-pill" placeholder="name@example.com" />
                       </div>
 

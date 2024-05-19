@@ -1,16 +1,13 @@
 .dashboard {
-    right: 20px;
-    bottom: 20px;
+  right: 20px;
+  bottom: 20px;
 }
 .bgOrangeColor {
-    background-color: #F7A325;
+  background-color: #f7a325;
 }
 .textOrangeColor {
-    color: #F7A325;
-<<<<<<< HEAD
+  color: #f7a325;
 }
 main {
-    height: 75vh;
-=======
->>>>>>> main
+  height: 75vh;
 }
