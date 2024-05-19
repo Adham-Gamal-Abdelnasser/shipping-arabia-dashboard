@@ -1,0 +1,1 @@
+export const baseUrl = `https://shipping-arabia-be.onrender.com/api/v1/`

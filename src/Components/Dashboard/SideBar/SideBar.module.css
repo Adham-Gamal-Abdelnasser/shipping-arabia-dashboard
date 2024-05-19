@@ -1,0 +1,35 @@
+aside {
+    background-color: #0A2F35;
+    color: #F7A325;
+}
+
+.active {
+    background-color: #F7A325;
+}
+.active a {
+    color: white;
+}
+ul li a {
+    color: #F7A325;
+    transition: 0.5s;
+}
+ul li {
+    transition: 0.5s;
+}
+ul li:hover {
+    background-color: #F7A325;
+}
+ul li:hover a {
+    color: white;
+}
+
+.btnCustom {
+    color: #F7A325 ;
+    border: 1px #F7A325 solid ;
+    background-color: transparent;
+    transition: 0.5s;
+}
+.btnCustom:hover {
+    color: white ;
+    background-color: #F7A325 ;
+}
