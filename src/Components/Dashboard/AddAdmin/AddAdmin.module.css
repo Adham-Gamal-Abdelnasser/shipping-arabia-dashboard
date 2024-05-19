@@ -10,10 +10,13 @@ i {
     top: 10px;
     color: #F7A325;
     cursor: pointer ;
+<<<<<<< HEAD
 }
 input , select {
     border: #F7A325 solid 1px !important;
 }
 ::placeholder {
     color: #F7A325 !important;
+=======
+>>>>>>> main
 }

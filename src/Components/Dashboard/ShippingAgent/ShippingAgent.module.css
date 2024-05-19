@@ -7,6 +7,7 @@
 }
 .textOrangeColor {
     color: #F7A325;
+<<<<<<< HEAD
 }
 main {
     height: 75vh;
@@ -21,4 +22,6 @@ main {
 .btnCustom:hover {
     color: white ;
     background-color: #F7A325 ;
+=======
+>>>>>>> main
 }

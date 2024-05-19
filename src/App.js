@@ -8,10 +8,18 @@ import Rsgister from './Components/Form/Register/Register.jsx';
 import { ToastContainer } from 'react-toastify';
 import Admin from './Components/Dashboard/Admin/Admin.jsx';
 import User from './Components/Dashboard/User/User.jsx';
+<<<<<<< HEAD
 
 
 function App() {
    
+=======
+import Message from './pages/Message.jsx';
+
+
+function App() {
+
+>>>>>>> main
   return (
     <>
       <ToastContainer theme='colored'></ToastContainer>
@@ -25,12 +33,20 @@ function App() {
               <Route path='shipping-agent' element={<ShippingAgent></ShippingAgent>}></Route>
               <Route path='admins' element={<Admin></Admin>}></Route>
               <Route path='users' element={<User></User>}></Route>
+<<<<<<< HEAD
+=======
+              <Route path='message' element={<Message></Message>}></Route>
+>>>>>>> main
             </Route>
             <Route path='login' element={<LogIn></LogIn>}></Route>
           </Routes>
         </BrowserRouter>
       </div>
+<<<<<<< HEAD
       
+=======
+
+>>>>>>> main
     </>
   );
 }
