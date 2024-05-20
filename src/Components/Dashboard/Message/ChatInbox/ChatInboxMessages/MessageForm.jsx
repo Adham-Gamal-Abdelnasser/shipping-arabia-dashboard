@@ -30,7 +30,7 @@ const MessageForm = ({ data }) => {
                     data?.senderId !== "admin" ?
                         <div className='flex mb-3'>
                             <div className='flex flex-col items-start'>
-                                <div className='max-w-[350px] bg-[#0A2F35] text-[16px] font-normal py-2 px-3 rounded-2xl rounded-bl-none text-white'>
+                                <div className='max-w-[350px] bg-[#0A2F35] text-[16px] font-normal py-2 px-3 rounded-2xl rounded-bl-none text-white break-words'>
                                     {data?.messageValue}
                                 </div>
                                 <div className="time text-[16px] font-normal text-[#8B8D97] mt-1">{formatTime(date)}</div>
@@ -38,7 +38,7 @@ const MessageForm = ({ data }) => {
                         </div> :
                         <div className='flex flex-row-reverse'>
                             <div className='flex flex-col items-end'>
-                                <div className='max-w-[350px] bg-[#0a2f351a] text-[16px] font-normal py-2 px-3 rounded-2xl rounded-br-none text-black'>
+                                <div className='max-w-[350px] bg-[#0a2f351a] text-[16px] font-normal py-2 px-3 rounded-2xl rounded-br-none text-black break-words'>
                                     {data?.messageValue}
                                 </div>
                                 <div className="time text-[16px] font-normal text-[#8B8D97] mt-1">{formatTime(date)}</div>

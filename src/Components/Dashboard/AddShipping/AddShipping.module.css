@@ -1,0 +1,19 @@
+.agentPopUp {
+    z-index: 999999999999999999999999999999999999999999999999999999999999999999;
+}
+.add {
+    background-color: #F7A325;
+    color: white;
+}
+i {
+    right: 10px;
+    top: 10px;
+    color: #F7A325;
+    cursor: pointer ;
+}
+input , select {
+    border: #F7A325 solid 1px !important;
+}
+::placeholder {
+    color: #F7A325 !important;
+}

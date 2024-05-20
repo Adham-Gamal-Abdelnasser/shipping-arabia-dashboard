@@ -6,15 +6,17 @@ import AddAdmin from '../AddAdmin/AddAdmin.jsx'
 import AddAgent from '../AddAgent/AddAgent.jsx'
 import AddNewMessageModal from '../Message/AddNewMessageModal.jsx'
 import { useSelector } from 'react-redux'
+import AddShiping from '../AddShipping/AddShipping.jsx'
 
 export default function Layout() {
   const { openAddNewMessage } = useSelector((state) => state.GlobalReducer);
 
 
   return (
-    <div className="relative">
+    <div className="relative overflow-hidden vh-100">
       <AddAdmin></AddAdmin>
       <AddAgent></AddAgent>
+      <AddShiping></AddShiping>
       <Navbar></Navbar>
       <div className='d-flex'>
         <div className='w-25'>

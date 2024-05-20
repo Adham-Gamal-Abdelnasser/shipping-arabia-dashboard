@@ -65,9 +65,12 @@ const notify = (msg,type) => toast[type](msg);
               <main className='border border-1 border-bg-black shadow-lg rounded-3 overflow-auto'>
 
 
-                  <header className='d-flex justify-content-between pt-3 px-3'>
-                      <h2>Shipping</h2>
-                      <div className=" mb-3">
+              <header className='d-flex justify-content-between pt-3 px-3'>
+                      <h2>Shippings</h2>
+                      <div className="d-flex gap-3 mb-3">
+                      <button className={`btn  ${Styles.btnCustom}`} onClick={()=>{
+                          document.getElementById("appPopUp").classList.replace("d-none","d-flex")
+                        }}>Add Shipping</button>
                           <input type="email" className="form-control px-5 rounded-pill" placeholder="name@example.com" />
                       </div>
 

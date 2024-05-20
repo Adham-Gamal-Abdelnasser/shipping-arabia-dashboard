@@ -9,7 +9,7 @@ const ChatHead = () => {
             <p className='text-[16px] text-[#45464E] font-semibold opacity-75'>
                 Conversations with Customers
             </p>
-            <p>
+            <p className='translate-y-10 '>
                 <button
                     type="button"
                     onClick={() => {
